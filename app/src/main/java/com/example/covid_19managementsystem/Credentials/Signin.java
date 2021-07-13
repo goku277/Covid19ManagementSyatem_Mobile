@@ -135,7 +135,7 @@ public class Signin extends AppCompatActivity {
 
     private void createRequest() {
         GoogleSignInOptions gso= new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-                .requestIdToken("914560277921-cs0ip6f520e1nvekh7pnukor0l23bvui.apps.googleusercontent.com")
+                .requestIdToken("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")
                 .requestEmail()
                 .build();
 
