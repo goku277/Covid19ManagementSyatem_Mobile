@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Covid_19ManagementSystem</string>
-    <string name="facebook_app_id">2979815865607311</string>
-    <string name="fb_login_protocol_scheme">fb2979815865607311</string>
+    <string name="facebook_app_id">xxxxxxxxxxxxx</string>
+    <string name="fb_login_protocol_scheme">xxxxxxxxxxxxxxx</string>
 
 
 </resources>
