@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Credentials.Signin">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:padding="25dp"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/logo_img_id"
+                android:layout_width="179dp"
+                android:layout_height="117dp"
+                android:layout_marginTop="48dp"
+                android:src="@drawable/logo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.285"
+                app:layout_constraintStart_toEndOf="@+id/tag_id"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tag_id"
+                android:layout_width="70dp"
+                android:layout_height="76dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="80dp"
+                android:text="Let's Login"
+                android:textColor="#000"
+                android:textSize="25sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/name_text_id"
+                android:layout_width="51dp"
+                android:layout_height="28dp"
+                android:layout_marginTop="8dp"
+                android:text="Name"
+                android:textColor="#000"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/name_id"
+                app:layout_constraintTop_toBottomOf="@+id/tag_id" />
+
+            <EditText
+                android:id="@+id/name_id"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:layout_marginTop="16dp"
+                android:hint="enter name"
+                android:padding="7dp"
+                android:background="@drawable/rounded_edittexts"
+                app:layout_constraintTop_toBottomOf="@+id/name_text_id"
+                tools:layout_editor_absoluteX="25dp" />
+
+            <TextView
+                android:id="@+id/email_text_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Email"
+                android:textColor="#000"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/name_id"
+                app:layout_constraintTop_toBottomOf="@+id/name_id" />
+
+            <EditText
+                android:id="@+id/email_id"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:layout_marginTop="20dp"
+                android:hint="enter email"
+                android:padding="7dp"
+                android:background="@drawable/rounded_edittexts"
+                android:inputType="textEmailAddress"
+                app:layout_constraintTop_toBottomOf="@+id/email_text_id"
+                tools:layout_editor_absoluteX="25dp" />
+
+            <TextView
+                android:id="@+id/password_text_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="24dp"
+                android:text="Password"
+                android:textColor="#000"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/email_id"
+                app:layout_constraintTop_toBottomOf="@+id/email_id" />
+
+            <EditText
+                android:id="@+id/password_id"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:layout_marginTop="16dp"
+                android:hint="enter password"
+                android:padding="7dp"
+                android:drawableRight="@drawable/eye"
+                android:background="@drawable/rounded_edittexts"
+                android:inputType="textPassword"
+                app:layout_constraintTop_toBottomOf="@+id/password_text_id"
+                tools:layout_editor_absoluteX="25dp" />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/check_box_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="@+id/password_id"
+                app:layout_constraintTop_toBottomOf="@+id/password_id" />
+
+            <TextView
+                android:id="@+id/i_agree_text_id"
+                android:layout_width="252dp"
+                android:layout_height="72dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="8dp"
+                android:foregroundGravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="I agree to the termas and conditions and privacy policy"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/check_box_id"
+                app:layout_constraintStart_toEndOf="@+id/check_box_id"
+                app:layout_constraintTop_toBottomOf="@+id/password_id"
+                app:layout_constraintVertical_bias="0.333" />
+
+            <Button
+                android:id="@+id/login_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Login"
+                android:background="@drawable/rounded_buttons"
+                app:layout_constraintTop_toBottomOf="@+id/i_agree_text_id"
+                tools:layout_editor_absoluteX="16dp" />
+
+
+            <!--    <ImageButton
+                    android:id="@+id/facebook_login_btn_id"
+                    android:layout_width="40dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/fb_icon"
+                    app:layout_constraintBottom_toBottomOf="@+id/google_login_btn_id"
+                    app:layout_constraintEnd_toEndOf="@+id/login_id"
+                    app:layout_constraintHorizontal_bias="0.262"
+                    app:layout_constraintStart_toEndOf="@+id/google_login_btn_id"
+                    app:layout_constraintTop_toTopOf="@+id/google_login_btn_id" />   -->
+
+            <ImageButton
+                android:id="@+id/google_login_btn_id"
+                android:layout_width="38dp"
+                android:layout_height="39dp"
+                android:layout_marginStart="44dp"
+                android:layout_marginLeft="44dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/google_login_icon"
+                app:layout_constraintStart_toStartOf="@+id/login_id"
+                app:layout_constraintTop_toBottomOf="@+id/login_id" />
+
+            <com.facebook.login.widget.LoginButton
+                android:id="@+id/facebook_login_btn_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="44dp"
+                android:layout_marginLeft="44dp"
+                app:layout_constraintBottom_toBottomOf="@+id/google_login_btn_id"
+                app:layout_constraintStart_toEndOf="@+id/google_login_btn_id"
+                app:layout_constraintTop_toTopOf="@+id/google_login_btn_id"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/dont_have_an_sccount_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="44dp"
+                android:layout_marginLeft="44dp"
+                android:layout_marginTop="12dp"
+                android:text="Don't have an account?"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/login_id"
+                app:layout_constraintTop_toBottomOf="@+id/google_login_btn_id" />
+
+            <TextView
+                android:id="@+id/signup_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:text="Signup"
+                android:textColor="#03A9F4"
+                android:textSize="18sp"
+                app:layout_constraintStart_toEndOf="@+id/dont_have_an_sccount_id"
+                app:layout_constraintTop_toTopOf="@+id/dont_have_an_sccount_id" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:id="@+id/empty_textview_id"
+                app:layout_constraintTop_toBottomOf="@+id/signup_id"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
